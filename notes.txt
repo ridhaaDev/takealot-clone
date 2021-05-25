@@ -1,0 +1,5 @@
+# Building this takealot clone while looking at the actual takealot website
+
+1. Mobile view (sm) - in progress, working on the HTML content
+
+2. Desktop view (md -> lg) - coming soon
