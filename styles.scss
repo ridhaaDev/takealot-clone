@@ -1,6 +1,40 @@
-body {
+// Colors
+$base-color: #0b79bf;
+$secondary-color: #25cd66;
+// Navbar start
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $base-color;
+    padding: 0 20px;
+    color: white;
+}
 
-    a {
-        color: yellow;
-    }
+nav > img {
+    height: 50px;
+}
+
+nav > .nav-links {
+    display: none;
+}
+// Navbar end
+
+// Deals Banner start
+.deals-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Arial Black", Arial, sans-serif;
+    height: 40px;
+    padding: 0 20px;
+    color: white;
+    background-color: $secondary-color;
+}
+// Deals Banner end
+
+// Preview items start
+.preview-items {
+    
 }
