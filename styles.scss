@@ -4,6 +4,7 @@ $secondary-color: #25cd66;
 // Navbar start
 nav {
     display: flex;
+    align-items: flex-start;
     align-items: center;
     justify-content: space-between;
     background-color: $base-color;
@@ -12,7 +13,8 @@ nav {
 }
 
 nav > img {
-    height: 50px;
+    height: 70px;
+
 }
 
 nav > .nav-links {
@@ -36,5 +38,65 @@ nav > .nav-links {
 
 // Preview items start
 .preview-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
     
+}
+.preview-items > section {
+    min-width: 150px;
+    max-width: 200px;
+    padding: 20px;
+    border: 1px solid rgb(231, 206, 206);
+    display: grid;
+    grid-template-columns: 35px 1fr;
+}
+.preview-items > section > img {
+    width: 100%;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: $secondary-color;
+    font-size: 12px;
+    color: white;
+}
+
+.preview-item-price, .preview-item-desc {
+    grid-column: 1/3;
+}
+
+.preview-item-desc {
+    color: rgba(71, 61, 61, 0.76);
+}
+
+.preview-item-price {
+    display: flex;
+    align-items: center;
+}
+
+.preview-item-price > :first-child {
+    font-size: 18px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.preview-item-price > :nth-child(2) {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: rgba(71, 61, 61, 0.76);
+    // font-weight: 800;
+}
+
+// Horizontal Banner
+.horizontal-banners > section {
+    height: 150px;
+    border: 1px solid black;
+    background-image: url("https://media.takealot.com/b/2/cms/p/smart/original_images/birthday.png");
+
 }
